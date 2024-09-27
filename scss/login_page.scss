@@ -1,0 +1,133 @@
+$primary-color: #007bff;
+$secondary-background: rgb(2, 0, 36);
+$third-background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(1, 95, 135, 1) 55%, rgba(0, 212, 255, 1) 100%);
+$hover-color: #00b35c;
+$input-border-color: #ccc;
+$container-bg-color: #201f51;
+$text-color: #ffffff;
+$box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: $secondary-background;
+    background: $third-background;
+    margin: 0; // ensure no body margin
+}
+
+.main-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.container {
+    background-color: $container-bg-color;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: $text-color;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: $text-color;
+    font-weight: bold;
+    text-align: left;
+}
+
+.input-box {
+    margin-bottom: 30px;
+
+    input {
+        width: 90%;
+        padding: 10px;
+        background: none;
+        border: 1px solid $input-border-color;
+        border-radius: 5px;
+        color: $text-color;
+    }
+}
+
+@mixin button($bg-color, $hover-color) {
+    width: 100%;
+    padding: 10px;
+    background-color: $bg-color;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}
+
+.login-btn {
+    @include button($primary-color, $hover-color);
+}
+
+.login-btn-parent {
+    @extend .login-btn;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.signup-btn {
+    @include button(aqua, #201f51);
+    border: 1px solid aqua;
+
+}
+
+.forgot-btn {
+    @include button(aqua, $primary-color);
+}
+
+.gender-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: $text-color;
+    font-weight: bold;
+}
+
+.custom-radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.custom-radio-label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    color: $text-color;
+
+    input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+.text{
+    color: $text-color;
+    margin-top: 20px;
+}
+a{
+    color: aqua;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+}

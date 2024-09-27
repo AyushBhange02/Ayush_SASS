@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sign Up Page</title>
+    <link rel="stylesheet" href="broker.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Create an account</h1>
+            <!-- Form starts here -->
+            <form>
+                <label for="Username">First  Name:</label>
+                <!-- Input field for the First Name -->
+                <div class="input-box">
+                    <input type="text" name="firstname" placeholder="First Name" required>
+                </div>
+
+                <label for="Username">Last  Name:</label>
+                <!-- Input field for the Last Name -->
+                <div class="input-box">
+                    <input type="text" name="lastname" placeholder="Last Name" required>
+                </div>
+
+                <label for="Username">Gender:</label>
+                <!-- Custom Radio button for Gender Selection -->
+                <div class="input-box">
+                    <div class="custom-radio-group">
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="male" class="custom-radio-label">Male</label>
+
+                        <input type="radio" name="gender" id="female" value="female" required>
+                        <label for="female" class="custom-radio-label">Female</label>
+
+                        <input type="radio" name="gender" id="other" value="other" required>
+                        <label for="other" class="custom-radio-label">Other</label>
+                    </div>
+                </div>
+
+                <label for="Username">Phone Number:</label>
+                <!-- Input field for the Phone number -->
+                <div class="input-box">
+                    <input type="number" name="phone" placeholder="Phone" required>
+                </div>
+
+                <label for="Username">Date of Birth:</label>
+                <!-- Input field for Date of Birth -->
+                <div class="input-box">
+                    <input type="date" name="dob" placeholder="Date of Birth" required>
+                </div>
+
+                <label for="Username">Email:</label>
+                <!-- Input field for Email -->
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <label for="Username">Enter your Username:</label>
+                <!-- Input field for Username -->
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+
+                <label for="Password">Enter your Password:</label>
+                <!-- Input field for Password -->
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

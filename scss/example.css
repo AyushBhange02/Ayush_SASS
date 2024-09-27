@@ -1,0 +1,18 @@
+body {
+  background-color: blue;
+  color: rgb(246, 246, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.main-container {
+  width: 40%;
+  height: 30%;
+  background-color: rgb(246, 246, 250);
+}
+
+/*# sourceMappingURL=example.css.map */

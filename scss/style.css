@@ -1,0 +1,97 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #3e649e;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.input-box input {
+    width: 90%;
+    padding: 10px;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Custom styling for gender section */
+.gender-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Radio button group styling */
+.custom-radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Styling individual radio buttons */
+.custom-radio-label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Hide original radio button */
+.custom-radio-label input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.login-btn:hover {
+    background-color: #00b35c;
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+    }
+}
+ 
